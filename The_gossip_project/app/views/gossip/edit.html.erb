@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EDIT</title>
+</head>
+<body>
+ <div class="container">
+    <%= form_tag url_for(action: 'update'), method: "PUT" do  %>
+
+      <%= label_tag 'title' %>
+      <%= text_field_tag 'title',@gossip.title %>
+      <br /> <br />
+
+      <%= label_tag 'content'%>
+      <%= text_area_tag 'content', @gossip.content %>
+      <br /> <br />
+
+
+      <%= submit_tag "validate gossip" %>
+    <% end %>
+
+	</div>
+
+</body>
+</html>

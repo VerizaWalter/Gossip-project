@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body><center>
+	<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src= url(https://cdn.pixabay.com/photo/2018/10/14/13/01/ruin-3746423_960_720.jpg) alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"> <%= @gossip.user.first_name %> </h5>
+    <p class="card-text"> <%= @gossip.content %></p>
+    <p class="card-text"><%= @gossip.user.email%></p>
+    <a href="<%= gossip_path(@gossip.user.id)%>"> city </a>
+    <a href="<%= gossip_index_path%>" class="btn btn-primary">home</a>
+    <a href="<%= gossip_path(@gossip.id)%>"
+    <span class="btn btn-danger" data-confirm="êtes vous sur!?" data-method ="DELETE">	; </span>
+  </div>
+</div>
+</div>
+</center>
+</body>
+</html>
